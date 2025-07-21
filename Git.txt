@@ -1,0 +1,120 @@
+Frontend Frameworks: (Date: 14/07/2025)
+--------------------
+Dr.Md.Gouse
+Room no: R610
+
+CO1 : Git and version control systems, introduction to HTML/CSS 
+CO2 : HTML5, CSS3 and Javascript
+CO3 : Fundamentals of React, UI Development
+CO4 : Advanced concepts of React, Testing and Backend development using Nodejs/Express
+
+
+Version control systems:
+-> They divided into 3 types
+1. Local VCS  - 
+2. Central VCS - Git
+3. Remote VCS - GitHub, GitLab, BitBucket
+
+
+
+Git-workflow:
+------------
+Working directory -> staging area -> local repository -> remote repository
+
+url to join into telegram:
+---------------------------
+https://tinyurl.com/Y24-SEC103
+
+git configuration with username and email:
+-----------------------------------------
+to check already existed configuration:
+-> git config --list
+
+
+set the username:
+git config --global user.name "githubusername"
+git config --global user.email "githubemail"
+
+1) git initialization
+command needed:
+working directory:\>git init
+2)check the git status (to know about untracked /un staged files available in working directory)
+command needed:\>git status
+3)assing untracked files to the staging area:
+command needed:\>git add . (for adding all the files available in working directory)
+command needed:\>git add<file name> (for adding specific files)
+4)committing files to local repository from starting area
+command needed:\>git commit -m"commit message"
+here m denote message 
+5)to check log of all commits 
+command needed:\>git log --oneline
+How to push localrepo data on to the GitHub using GitRepo Url:
+--------------------------------------------------------------
+1) create GitHub Repository with default settings
+2) navigate to the commandprompt in which your local repo available.
+3) check whether any files available in localrepo.
+     (minimum one file required before push it into remote)
+4) execute the following commands to push localrepo data to remote repo:
+   a) git branch -M main
+   b) git remote add origin "GitRepo_URL which is copied from Gibhub account"
+   c) git push -u origin main
+
+Push some other files from localrepo to remote repo:
+----------------------------------------------------
+1. create 1 or 2 more files in working directory first
+2. send them to the staging area using the following command:
+       -> git add .
+3. commit changes into localrepo using following command:
+       -> git commit -m "message_required"
+4. push localrepo data to remote repo using following command:
+       -> git push -u origin main
+
+creating branches and adding files to the branches:
+---------------------------------------------------
+1. create a branch using following command:
+       -> git branch <branch_name>
+      ex:- 
+          git branch first
+          git branch second
+   note: here 2 branches created.
+2. switch to specific branch to add files using following command:
+       -> git checkout <branch_name>
+     ex:-
+           git checkout first
+3. add files to the first branch using following command:
+       -> git add <filename> (sending to staging)
+       -> git commit -m "message" (commit to localrepo)
+4. switch to main branch to merge the created sub branches:
+        -> git merge <branch_name>
+          ex:-  git merge first
+5. push local repo data to the remote repo using command:
+         -> git push -u origin main
+
+      
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
